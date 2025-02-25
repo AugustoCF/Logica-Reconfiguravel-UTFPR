@@ -1,0 +1,79 @@
+-- Copyright (C) 2018  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=8;
+DEPTH=91;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	0   :   01000000;
+	1   :   01000001;
+	2   :   01000010;
+	3   :   01000011;
+	4   :   01000100;
+	5   :   01000101;
+	6   :   01000110;
+	7   :   01000111;
+	8   :   01001000;
+	9   :   01001001;
+	10  :   01001010;
+	11  :   01001011;
+	12  :   01001100;
+	13  :   01001101;
+	[14..15]  :   01001110;
+	16  :   01001111;
+	17  :   01010000;
+	[18..19]  :   01010001;
+	20  :   01010010;
+	[21..22]  :   01010011;
+	[23..24]  :   01010100;
+	25  :   01010101;
+	[26..27]  :   01010110;
+	[28..30]  :   01010111;
+	[31..32]  :   01011000;
+	[33..36]  :   01011001;
+	[37..44]  :   01011010;
+	45  :   01011011;
+	[46..53]  :   01011010;
+	[54..57]  :   01011001;
+	[58..59]  :   01011000;
+	[60..62]  :   01010111;
+	[63..64]  :   01010110;
+	65  :   01010101;
+	[66..67]  :   01010100;
+	[68..69]  :   01010011;
+	70  :   01010010;
+	[71..72]  :   01010001;
+	73  :   01010000;
+	74  :   01001111;
+	[75..76]  :   01001110;
+	77  :   01001101;
+	78  :   01001100;
+	79  :   01001011;
+	80  :   01001010;
+	81  :   01001001;
+	82  :   01001000;
+	83  :   01000111;
+	84  :   01000110;
+	85  :   01000101;
+	86  :   01000100;
+	87  :   01000011;
+	88  :   01000010;
+	89  :   01000001;
+	90  :   01000000;
+END;

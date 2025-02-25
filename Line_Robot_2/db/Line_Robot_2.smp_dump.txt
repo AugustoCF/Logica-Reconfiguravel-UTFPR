@@ -1,0 +1,9 @@
+
+State Machine - |Line_Robot_2|SM1:inst3|fstate
+Name fstate.SEARCH_D fstate.SEARCH_E fstate.TURN_D fstate.TURN_E fstate.FULL fstate.STOP 
+fstate.STOP 0 0 0 0 0 0 
+fstate.FULL 0 0 0 0 1 1 
+fstate.TURN_E 0 0 0 1 0 1 
+fstate.TURN_D 0 0 1 0 0 1 
+fstate.SEARCH_E 0 1 0 0 0 1 
+fstate.SEARCH_D 1 0 0 0 0 1 

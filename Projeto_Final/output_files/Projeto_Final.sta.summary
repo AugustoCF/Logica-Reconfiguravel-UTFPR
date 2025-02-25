@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -7.960
+TNS   : -279.754
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -2.215
+TNS   : -34.331
+
+Type  : Slow 1200mV 85C Model Hold 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.490
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -2.422
+TNS   : -214.466
+
+Type  : Slow 1200mV 0C Model Setup 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -7.174
+TNS   : -246.609
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -1.886
+TNS   : -28.494
+
+Type  : Slow 1200mV 0C Model Hold 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -38.075
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -2.333
+TNS   : -210.194
+
+Type  : Fast 1200mV 0C Model Setup 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -2.663
+TNS   : -55.578
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -0.799
+TNS   : -1.526
+
+Type  : Fast 1200mV 0C Model Hold 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -28.875
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]'
+Slack : -1.000
+TNS   : -118.000
+
+------------------------------------------------------------

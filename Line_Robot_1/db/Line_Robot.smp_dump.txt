@@ -1,0 +1,7 @@
+
+State Machine - |Block1|Line_Robot:inst|fstate
+Name fstate.TURN_D fstate.TURN_E fstate.MAX_SPEED fstate.STOP 
+fstate.STOP 0 0 0 0 
+fstate.MAX_SPEED 0 0 1 1 
+fstate.TURN_E 0 1 0 1 
+fstate.TURN_D 1 0 0 1 

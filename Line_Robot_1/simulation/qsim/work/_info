@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/simulation/qsim
+vBlock1
+Z1 !s110 1740017361
+!i10b 1
+!s100 mU1fVmTYW59@8=<JON>:n0
+Ibd07a^GPDABNjR8gMPjzS3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1740017361
+Z4 8Line_Robot.vo
+Z5 FLine_Robot.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1740017361.000000
+Z8 !s107 Line_Robot.vo|
+Z9 !s90 -work|work|Line_Robot.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@block1
+vBlock1_vlg_vec_tst
+R1
+!i10b 1
+!s100 IcV8]:?P>]g_QlbJl6IRh1
+I]_0MGC;l]bBge:5Hk3R@G3
+R2
+R0
+w1740017360
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@block1_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 Y4g^lH[Ui9IU6Y8OKFdf63
+IV?711mUDYYlNdafU]D;hM1
+R2
+R0
+R3
+R4
+R5
+L0 446
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

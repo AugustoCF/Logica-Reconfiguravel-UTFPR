@@ -1,0 +1,7 @@
+
+State Machine - |Projeto_Final|Alarme_Relogio:inst3|estado
+Name estado.ALARME_TOCOU estado.ALARME_SETADO estado.SETAR_ALARME estado.MOSTRAR_HORA 
+estado.MOSTRAR_HORA 0 0 0 0 
+estado.SETAR_ALARME 0 0 1 1 
+estado.ALARME_SETADO 0 1 0 1 
+estado.ALARME_TOCOU 1 0 0 1 
