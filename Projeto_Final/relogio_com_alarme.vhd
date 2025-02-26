@@ -13,12 +13,14 @@ entity Relogio_com_Alarme is
         btn_config_alarme : in STD_LOGIC; -- Switch para entrar no modo de configuração do alarme
         btn_confirmar : in STD_LOGIC;     -- Switch para confirmar o horário do alarme
         btn_desligar_alarme : in STD_LOGIC; -- Switch para desligar o alarme
+		  
         segundos_dezena : out STD_LOGIC_VECTOR(3 downto 0);  -- Dezena dos segundos (0 a 5)
         segundos_unidade : out STD_LOGIC_VECTOR(3 downto 0);  -- Unidade dos segundos (0 a 9)
         minutos_dezena : out STD_LOGIC_VECTOR(3 downto 0);   -- Dezena dos minutos (0 a 5)
         minutos_unidade : out STD_LOGIC_VECTOR(3 downto 0);  -- Unidade dos minutos (0 a 9)
         horas_dezena : out STD_LOGIC_VECTOR(3 downto 0);     -- Dezena das horas (0 a 2)
         horas_unidade : out STD_LOGIC_VECTOR(3 downto 0);    -- Unidade das horas (0 a 9)
+		  
         alarme_ativado : out STD_LOGIC;                      -- Sinal que indica se o alarme está ativado
         modo_config_alarme_led : out STD_LOGIC;              -- LED para indicar o modo de configuração do alarme
         leds_alarme : out STD_LOGIC_VECTOR(7 downto 0)       -- 8 LEDs para piscar quando o alarme tocar

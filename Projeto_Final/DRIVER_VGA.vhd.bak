@@ -1,0 +1,175 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity vga_time_display is
+    port (
+        clk         : in  std_logic;
+        reset       : in  std_logic;
+        -- Time inputs (BCD digits)
+        H_tens      : in  std_logic_vector(3 downto 0);
+        H_units     : in  std_logic_vector(3 downto 0);
+        M_tens      : in  std_logic_vector(3 downto 0);
+        M_units     : in  std_logic_vector(3 downto 0);
+        S_tens      : in  std_logic_vector(3 downto 0);
+        S_units     : in  std_logic_vector(3 downto 0);
+        -- VGA outputs
+        VGA_HS      : out std_logic;
+        VGA_VS      : out std_logic;
+        VGA_RED     : out std_logic_vector(3 downto 0);
+        VGA_GREEN   : out std_logic_vector(3 downto 0);
+        VGA_BLUE    : out std_logic_vector(3 downto 0)
+    );
+end vga_time_display;
+
+architecture behavioral of vga_time_display is
+
+    component VGA_drvr is
+        generic(
+            H_back_porch:    natural := 48;
+            H_display:      natural := 640;
+            H_front_porch:  natural := 16;
+            H_retrace:      natural := 96;
+            V_back_porch:   natural := 33;
+            V_display:      natural := 480;
+            V_front_porch:  natural := 10;
+            V_retrace:      natural := 2;
+            Color_bits:     natural := 4;
+            H_sync_polarity: std_logic := '0';
+            V_sync_polarity: std_logic := '0';
+            H_counter_size: natural := 10;
+            V_counter_size: natural := 10
+        );
+        port(
+            i_vid_clk      : in  std_logic;
+            i_rstb         : in  std_logic;
+            o_h_sync       : out std_logic;
+            o_v_sync       : out std_logic;
+            o_pixel_x      : out std_logic_vector(9 downto 0);
+            o_pixel_y      : out std_logic_vector(9 downto 0);
+            o_vid_display  : out std_logic;
+            i_red_in       : in  std_logic_vector(3 downto 0);
+            i_green_in     : in  std_logic_vector(3 downto 0);
+            i_blue_in      : in  std_logic_vector(3 downto 0);
+            o_red_out      : out std_logic_vector(3 downto 0);
+            o_green_out    : out std_logic_vector(3 downto 0);
+            o_blue_out     : out std_logic_vector(3 downto 0)
+        );
+    end component;
+
+    -- Segment encoding (A-G)
+    type seg7 is array (0 to 9) of std_logic_vector(6 downto 0);
+    constant SEGMENT_CODES : seg7 := (
+        "1111110", -- 0
+        "0110000", -- 1
+        "1101101", -- 2
+        "1111001", -- 3
+        "0110011", -- 4
+        "1011011", -- 5
+        "1011111", -- 6
+        "1110000", -- 7
+        "1111111", -- 8
+        "1111011"  -- 9
+    );
+
+    signal pixel_x      : unsigned(9 downto 0);
+    signal pixel_y      : unsigned(9 downto 0);
+    signal display_on   : std_logic;
+    signal rgb_in       : std_logic_vector(11 downto 0);
+    
+    -- Position constants
+    constant DIGIT_WIDTH   : integer := 40;
+    constant DIGIT_HEIGHT  : integer := 75;
+    constant COLON_SIZE    : integer := 5;
+    constant START_X       : integer := 190;
+    constant START_Y       : integer := 200;
+    
+begin
+
+    vga_driver: VGA_drvr
+    port map(
+        i_vid_clk => clk,
+        i_rstb => reset,
+        o_h_sync => VGA_HS,
+        o_v_sync => VGA_VS,
+        o_pixel_x => std_logic_vector(pixel_x),
+        o_pixel_y => std_logic_vector(pixel_y),
+        o_vid_display => display_on,
+        i_red_in => rgb_in(11 downto 8),
+        i_green_in => rgb_in(7 downto 4),
+        i_blue_in => rgb_in(3 downto 0),
+        o_red_out => VGA_RED,
+        o_green_out => VGA_GREEN,
+        o_blue_out => VGA_BLUE
+    );
+
+    process(clk, reset)
+        variable x, y : integer;
+        variable seg : std_logic_vector(6 downto 0);
+        variable color : std_logic_vector(11 downto 0);
+    begin
+        if reset = '0' then
+            rgb_in <= (others => '0');
+        elsif rising_edge(clk) then
+            x := to_integer(pixel_x);
+            y := to_integer(pixel_y);
+            color := (others => '0');
+
+            -- Check each digit position
+            check_digits: for i in 0 to 5 loop
+                variable pos_x, pos_y : integer;
+                variable digit : std_logic_vector(3 downto 0);
+            begin
+                case i is
+                    when 0 => -- H1
+                        pos_x := START_X;
+                        digit := H_tens;
+                    when 1 => -- H0
+                        pos_x := START_X + DIGIT_WIDTH + 10;
+                        digit := H_units;
+                    when 2 => -- M1
+                        pos_x := START_X + 2*(DIGIT_WIDTH + 10) + 20;
+                        digit := M_tens;
+                    when 3 => -- M0
+                        pos_x := START_X + 3*(DIGIT_WIDTH + 10) + 20;
+                        digit := M_units;
+                    when 4 => -- S1
+                        pos_x := START_X + 4*(DIGIT_WIDTH + 10) + 40;
+                        digit := S_tens;
+                    when others => -- S0
+                        pos_x := START_X + 5*(DIGIT_WIDTH + 10) + 40;
+                        digit := S_units;
+                end case;
+                pos_y := START_Y;
+
+                if x >= pos_x and x < pos_x + DIGIT_WIDTH and
+                   y >= pos_y and y < pos_y + DIGIT_HEIGHT then
+                    seg := SEGMENT_CODES(to_integer(unsigned(digit)));
+                    -- Check segments
+                    if ((seg(6) = '1' and y < pos_y + 5) or                    -- A
+                       ((seg(5) = '1' and x >= pos_x + 35 and y < pos_y + 35) or  -- B
+                       ((seg(4) = '1' and x >= pos_x + 35 and y >= pos_y + 40) or -- C
+                       ((seg(3) = '1' and y >= pos_y + 70) or                   -- D
+                       ((seg(2) = '1' and x < pos_x + 5 and y >= pos_y + 40) or  -- E
+                       ((seg(1) = '1' and x < pos_x + 5 and y < pos_y + 35) or   -- F
+                       ((seg(0) = '1' and y >= pos_y + 35 and y < pos_y + 40)) then -- G
+                        color := x"FFF"; -- White
+                    end if;
+                end if;
+            end loop check_digits;
+
+            -- Check colons
+            if ((x >= START_X + 2*DIGIT_WIDTH + 15 and x < START_X + 2*DIGIT_WIDTH + 20) and
+                ((y >= START_Y + 20 and y < START_Y + 25) or 
+                 (y >= START_Y + 50 and y < START_Y + 55))) or
+               ((x >= START_X + 4*DIGIT_WIDTH + 35 and x < START_X + 4*DIGIT_WIDTH + 40) and
+                ((y >= START_Y + 20 and y < START_Y + 25) or 
+                 (y >= START_Y + 50 and y < START_Y + 55))) then
+                color := x"FFF"; -- White
+            end if;
+
+            rgb_in <= color;
+        end if;
+    end process;
+
+end behavioral;

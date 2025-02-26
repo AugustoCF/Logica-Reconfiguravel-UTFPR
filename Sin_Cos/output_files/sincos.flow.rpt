@@ -1,5 +1,5 @@
 Flow report for sincos
-Mon Feb 24 19:58:35 2025
+Tue Feb 25 15:26:25 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Feb 24 19:58:32 2025       ;
+; Flow Status                        ; Successful - Tue Feb 25 15:26:21 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sincos                                      ;
 ; Top-level Entity Name              ; sincos                                      ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/24/2025 19:58:08 ;
+; Start date & time ; 02/25/2025 15:25:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sincos              ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name       ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------------+------------+
-; COMPILER_SIGNATURE_ID               ; 185410941787152.174043788814488        ; --            ; --                ; --         ;
+; COMPILER_SIGNATURE_ID               ; 185410941787152.174050795622468        ; --            ; --                ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --                ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --                ; --         ;
 ; MISC_FILE                           ; contador.bsf                           ; --            ; --                ; --         ;
@@ -120,11 +120,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4859 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:09     ; 1.1                     ; 6214 MB             ; 00:00:14                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4678 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4910 MB             ; 00:00:03                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4856 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:09     ; 1.1                     ; 6210 MB             ; 00:00:15                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4683 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4913 MB             ; 00:00:03                           ;
+; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

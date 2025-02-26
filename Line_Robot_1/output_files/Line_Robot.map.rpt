@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Line_Robot
-Mon Feb 24 19:59:24 2025
+Tue Feb 25 15:32:14 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -55,7 +55,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 24 19:59:24 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue Feb 25 15:32:14 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Line_Robot                                  ;
 ; Top-level Entity Name              ; Block1                                      ;
@@ -173,43 +173,44 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
-; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/Block1.bdf                  ;         ;
-; DIV_CLK.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd                 ;         ;
-; meia_full_speed_seteseg.mif      ; yes             ; User Memory Initialization File    ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/meia_full_speed_seteseg.mif ;         ;
-; ROM_SIMPLES_7SEG.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd        ;         ;
-; estado_seteseg.mif               ; yes             ; User Memory Initialization File    ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/estado_seteseg.mif          ;         ;
-; STATE_7SEG.vhd                   ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd              ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                              ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                       ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                 ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                              ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                              ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                               ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                  ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                  ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                ;         ;
-; db/altsyncram_h9s3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/altsyncram_h9s3.tdf      ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf                             ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                            ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                             ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc                                ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                             ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                             ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc                                  ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                     ;         ;
-; db/cntr_j5h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/cntr_j5h.tdf             ;         ;
-; line_robot.v                     ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/line_robot.v                ;         ;
-; db/altsyncram_88r3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/altsyncram_88r3.tdf      ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; Block1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/Block1.bdf                  ;         ;
+; DIV_CLK.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd                 ;         ;
+; meia_full_speed_seteseg.mif      ; yes             ; User Memory Initialization File    ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/meia_full_speed_seteseg.mif ;         ;
+; ROM_SIMPLES_7SEG.vhd             ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd        ;         ;
+; estado_seteseg.mif               ; yes             ; User Memory Initialization File    ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/estado_seteseg.mif          ;         ;
+; STATE_7SEG.vhd                   ; yes             ; User Wizard-Generated File         ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd              ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                            ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                     ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                               ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                            ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                            ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                             ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                              ;         ;
+; db/altsyncram_h9s3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/altsyncram_h9s3.tdf      ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf                           ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_constant.inc                          ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                           ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cmpconst.inc                              ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                           ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                           ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffeea.inc                                ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_counter_stratix.inc                   ;         ;
+; db/cntr_j5h.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/cntr_j5h.tdf             ;         ;
+; line_robot.v                     ; yes             ; Auto-Found Verilog HDL File        ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/line_robot.v                ;         ;
+; db/altsyncram_88r3.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/altsyncram_88r3.tdf      ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------+
@@ -661,29 +662,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Feb 24 19:59:14 2025
+    Info: Processing started: Tue Feb 25 15:32:04 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Line_Robot -c Line_Robot
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file block1.bdf
     Info (12023): Found entity 1: Block1
 Info (12021): Found 2 design units, including 1 entities, in source file div_clk.vhd
-    Info (12022): Found design unit 1: div_clk-SYN File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd Line: 51
-    Info (12023): Found entity 1: DIV_CLK File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd Line: 42
+    Info (12022): Found design unit 1: div_clk-SYN File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd Line: 51
+    Info (12023): Found entity 1: DIV_CLK File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file rom_bcd_7seg.vhd
-    Info (12022): Found design unit 1: rom_bcd_7seg-SYN File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_BCD_7SEG.vhd Line: 52
-    Info (12023): Found entity 1: ROM_BCD_7SEG File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_BCD_7SEG.vhd Line: 42
+    Info (12022): Found design unit 1: rom_bcd_7seg-SYN File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_BCD_7SEG.vhd Line: 52
+    Info (12023): Found entity 1: ROM_BCD_7SEG File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_BCD_7SEG.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file rom_simples_7seg.vhd
-    Info (12022): Found design unit 1: rom_simples_7seg-SYN File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 52
-    Info (12023): Found entity 1: ROM_SIMPLES_7SEG File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 42
+    Info (12022): Found design unit 1: rom_simples_7seg-SYN File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 52
+    Info (12023): Found entity 1: ROM_SIMPLES_7SEG File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 42
 Info (12021): Found 2 design units, including 1 entities, in source file state_7seg.vhd
-    Info (12022): Found design unit 1: state_7seg-SYN File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd Line: 52
-    Info (12023): Found entity 1: STATE_7SEG File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd Line: 42
+    Info (12022): Found design unit 1: state_7seg-SYN File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd Line: 52
+    Info (12023): Found entity 1: STATE_7SEG File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd Line: 42
 Info (12127): Elaborating entity "Block1" for the top level hierarchy
 Info (12128): Elaborating entity "ROM_SIMPLES_7SEG" for hierarchy "ROM_SIMPLES_7SEG:inst3"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
-Info (12130): Elaborated megafunction instantiation "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
-Info (12133): Instantiated megafunction "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
+Info (12133): Instantiated megafunction "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/ROM_SIMPLES_7SEG.vhd Line: 59
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -735,28 +736,28 @@ Info (12133): Instantiated megafunction "ROM_SIMPLES_7SEG:inst3|altsyncram:altsy
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_h9s3.tdf
-    Info (12023): Found entity 1: altsyncram_h9s3 File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/altsyncram_h9s3.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_h9s3 File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/altsyncram_h9s3.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_h9s3" for hierarchy "ROM_SIMPLES_7SEG:inst3|altsyncram:altsyncram_component|altsyncram_h9s3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "DIV_CLK" for hierarchy "DIV_CLK:inst1"
-Info (12128): Elaborating entity "lpm_counter" for hierarchy "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd Line: 73
-Info (12130): Elaborated megafunction instantiation "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd Line: 73
-Info (12133): Instantiated megafunction "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/DIV_CLK.vhd Line: 73
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd Line: 73
+Info (12130): Elaborated megafunction instantiation "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd Line: 73
+Info (12133): Instantiated megafunction "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/DIV_CLK.vhd Line: 73
     Info (12134): Parameter "lpm_direction" = "UP"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "25"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_j5h.tdf
-    Info (12023): Found entity 1: cntr_j5h File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/cntr_j5h.tdf Line: 25
+    Info (12023): Found entity 1: cntr_j5h File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/cntr_j5h.tdf Line: 25
 Info (12128): Elaborating entity "cntr_j5h" for hierarchy "DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
 Warning (12125): Using design file line_robot.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Line_Robot File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/line_robot.v Line: 22
+    Info (12023): Found entity 1: Line_Robot File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/line_robot.v Line: 22
 Warning (12300): Found the following files while searching for definition of entity "Line_Robot", but did not use these files because already using a different file containing the entity definition
     Warning (12126): File: Line_Robot.vhd
 Info (12128): Elaborating entity "Line_Robot" for hierarchy "Line_Robot:inst"
 Info (12128): Elaborating entity "STATE_7SEG" for hierarchy "STATE_7SEG:inst4"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "STATE_7SEG:inst4|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd Line: 59
-Info (12130): Elaborated megafunction instantiation "STATE_7SEG:inst4|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd Line: 59
-Info (12133): Instantiated megafunction "STATE_7SEG:inst4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/STATE_7SEG.vhd Line: 59
+Info (12128): Elaborating entity "altsyncram" for hierarchy "STATE_7SEG:inst4|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd Line: 59
+Info (12130): Elaborated megafunction instantiation "STATE_7SEG:inst4|altsyncram:altsyncram_component" File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd Line: 59
+Info (12133): Instantiated megafunction "STATE_7SEG:inst4|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/STATE_7SEG.vhd Line: 59
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -808,7 +809,7 @@ Info (12133): Instantiated megafunction "STATE_7SEG:inst4|altsyncram:altsyncram_
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_88r3.tdf
-    Info (12023): Found entity 1: altsyncram_88r3 File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/altsyncram_88r3.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_88r3 File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/altsyncram_88r3.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_88r3" for hierarchy "STATE_7SEG:inst4|altsyncram:altsyncram_component|altsyncram_88r3:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
@@ -1055,9 +1056,9 @@ Info (21057): Implemented 75 device resources after synthesis - the final resour
     Info (21061): Implemented 30 logic cells
     Info (21064): Implemented 21 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 239 warnings
-    Info: Peak virtual memory: 4857 megabytes
-    Info: Processing ended: Mon Feb 24 19:59:24 2025
+    Info: Peak virtual memory: 4859 megabytes
+    Info: Processing ended: Tue Feb 25 15:32:14 2025
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 

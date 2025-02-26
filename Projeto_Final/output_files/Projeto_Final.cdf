@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(10M50DAF484) MfrSpec(OpMask(0) FullPath("C:/Users/Augusto Freitas/Documents/hernique/Projeto_Final/output_files/Projeto_Final.sof"));
+	P ActionCode(Cfg)
+		Device PartName(10M50DAF484) Path("C:/Users/aluno/Downloads/LogicaReconfiguravel/Projeto_Final/output_files/") File("Projeto_Final.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

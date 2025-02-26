@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_2/output_files/") File("Line_Robot_2.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_2/output_files/") File("Line_Robot_2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

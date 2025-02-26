@@ -1,5 +1,5 @@
 Fitter report for sincos
-Mon Feb 24 19:58:28 2025
+Tue Feb 25 15:26:17 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -74,7 +74,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Feb 24 19:58:28 2025       ;
+; Fitter Status                      ; Successful - Tue Feb 25 15:26:17 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sincos                                      ;
 ; Top-level Entity Name              ; sincos                                      ;
@@ -372,7 +372,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/output_files/sincos.pin.
+The pin-out file can be found in C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/output_files/sincos.pin.
 
 
 +---------------------------------------------------------------------------+
@@ -1658,10 +1658,10 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node DIV_CLK:inst11|lpm_counter:LPM_COUNTER_component|cntr_aqh:auto_generated|counter_reg_bit[23]  File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/db/cntr_aqh.tdf Line: 157
+Info (176353): Automatically promoted node DIV_CLK:inst11|lpm_counter:LPM_COUNTER_component|cntr_aqh:auto_generated|counter_reg_bit[23]  File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/db/cntr_aqh.tdf Line: 157
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node DIV_CLK:inst11|lpm_counter:LPM_COUNTER_component|cntr_aqh:auto_generated|counter_comb_bita23 File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/db/cntr_aqh.tdf Line: 147
+        Info (176357): Destination node DIV_CLK:inst11|lpm_counter:LPM_COUNTER_component|cntr_aqh:auto_generated|counter_comb_bita23 File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/db/cntr_aqh.tdf Line: 147
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1835,24 +1835,24 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.18 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/output_files/sincos.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/output_files/sincos.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 162 warnings
-    Info: Peak virtual memory: 6214 megabytes
-    Info: Processing ended: Mon Feb 24 19:58:28 2025
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Peak virtual memory: 6210 megabytes
+    Info: Processing ended: Tue Feb 25 15:26:18 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/output_files/sincos.fit.smsg.
+The suppressed messages can be found in C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/output_files/sincos.fit.smsg.
 
 

@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484) Path("C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Sin_Cos/output_files/") File("sincos.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484) Path("C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Sin_Cos/output_files/") File("sincos.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

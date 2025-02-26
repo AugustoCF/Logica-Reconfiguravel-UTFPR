@@ -12,6 +12,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[6]",
 					"strict" : false
 				},
@@ -212,6 +220,54 @@
 					"strict" : false
 				},
 				{
+					"name" : "VGA_B_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R_OUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R_OUT[0]",
+					"strict" : false
+				},
+				{
 					"name" : "btn_confirmar",
 					"strict" : false
 				},
@@ -225,6 +281,10 @@
 				},
 				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "RST_VGA",
 					"strict" : false
 				},
 				{

@@ -1,5 +1,5 @@
 Fitter report for Line_Robot
-Mon Feb 24 19:59:33 2025
+Tue Feb 25 15:32:24 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -72,7 +72,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Feb 24 19:59:33 2025       ;
+; Fitter Status                      ; Successful - Tue Feb 25 15:32:24 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Line_Robot                                  ;
 ; Top-level Entity Name              ; Block1                                      ;
@@ -375,7 +375,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/output_files/Line_Robot.pin.
+The pin-out file can be found in C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/output_files/Line_Robot.pin.
 
 
 +--------------------------------------------------------------------------+
@@ -1536,10 +1536,10 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node MAX10_CLK1_50~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed))
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
-Info (176353): Automatically promoted node DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]  File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/cntr_j5h.tdf Line: 156
+Info (176353): Automatically promoted node DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_reg_bit[24]  File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/cntr_j5h.tdf Line: 156
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
-        Info (176357): Destination node DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_comb_bita24 File: C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/db/cntr_j5h.tdf Line: 151
+        Info (176357): Destination node DIV_CLK:inst1|lpm_counter:LPM_COUNTER_component|cntr_j5h:auto_generated|counter_comb_bita24 File: C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/db/cntr_j5h.tdf Line: 151
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
@@ -1705,7 +1705,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1723,12 +1723,12 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/output_files/Line_Robot.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/output_files/Line_Robot.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 167 warnings
     Info: Peak virtual memory: 6203 megabytes
-    Info: Processing ended: Mon Feb 24 19:59:33 2025
+    Info: Processing ended: Tue Feb 25 15:32:24 2025
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:14
 
@@ -1736,6 +1736,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 167 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Augusto Freitas/Documents/Faculdade/Logica_Recon/Line_Robot_1/output_files/Line_Robot.fit.smsg.
+The suppressed messages can be found in C:/Users/Augusto Freitas/Documents/LogicaReconfiguravel/Line_Robot_1/output_files/Line_Robot.fit.smsg.
 
 
